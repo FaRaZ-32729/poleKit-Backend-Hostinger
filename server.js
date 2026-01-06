@@ -21,7 +21,7 @@ const { espAlertSocket } = require("./src/utils/espAlertSocket");
 
 dotenv.config();
 dbConnection();
-const port = process.env.PORT || 5050;
+const port = process.env.PORT || 5052;
 const app = express();
 const server = http.createServer(app);
 
