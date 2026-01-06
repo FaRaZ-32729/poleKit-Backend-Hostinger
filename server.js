@@ -27,7 +27,8 @@ const server = http.createServer(app);
 
 // Middlewares
 const allowedOrigins = [
-    "http://localhost:5173"
+    "http://localhost:5173",
+    process.env.FRONTEND_URL
 ];
 
 app.use(cors({
@@ -58,7 +59,7 @@ app.use("/device", authenticate, deviceRouter);
 app.use("/alert", authenticate, alertsRouter);
 
 app.get("/", (req, res) => {
-    res.send("wellcome ");
+    res.send("Hellow FaRaZ To IOTFIY-PoleKit Server ");
 });
 
 
