@@ -138,13 +138,13 @@ const createUser = async (req, res) => {
 
         await sendEmail(
             newUser.email,
-            "Set up your PoleKit account",
+            "Set up your SmartVolt account",
             `
             <div style="font-family: Arial, sans-serif; color: #333; background: #f5f8fa; padding: 20px; border-radius: 8px;">
                 <div style="text-align: center;">
-                    <img src="cid:logo" alt="IOTFIY Logo" style="width: 120px; margin-bottom: 20px;" />
+                    <img src="https://polekit.iotfiysolutions.com/assets/logo.png" alt="SmartVolt Logo" style="width: 120px; margin-bottom: 20px;" />
                 </div>
-                <h2 style="color: #0055a5;">Welcome to PoleKit!</h2>
+                <h2 style="color: #0055a5;">Welcome to SmartVolt!</h2>
                 <p>Hello <b>${newUser.name || newUser.email}</b>,</p>
                 <p>Your account has been created. Please click below to set your password:</p>
 
@@ -221,14 +221,14 @@ const setPassword = async (req, res) => {
 
         await sendEmail(
             user.email,
-            "Verify Your PoleKit account",
+            "Verify Your SmartVolt account",
             `
   <div style="font-family: Arial, sans-serif; color: #333; padding: 20px; max-width: 600px; margin: auto; border: 1px solid #e6e6e6; border-radius: 8px; background-color: #ffffff;">
       <div style="text-align: center; padding-bottom: 20px; border-bottom: 1px solid #e6e6e6;">
-          <img src="cid:logo.png" alt="IOTFIY Logo" style="max-width: 150px;" />
+          <img src="https://polekit.iotfiysolutions.com/assets/logo.png" alt="SmartVolt Logo" style="max-width: 150px;" />
       </div>
 
-      <h2 style="color: #263238; margin-top: 30px;">Welcome to PoleKit!</h2>
+      <h2 style="color: #263238; margin-top: 30px;">Welcome to SmartVolt!</h2>
       <p style="font-size: 14px; line-height: 1.6;">
           Hi <strong>${user.name || user.email}</strong>,
           <br><br>
@@ -395,7 +395,7 @@ const forgotPassword = async (req, res) => {
         // Send email
         await sendEmail(
             user.email,
-            "Reset Your PoleKit Account Password",
+            "Reset Your SmartVolt Account Password",
             `
             <div style="font-family: Arial, sans-serif; color: #333; padding: 20px;">
                 <h2>Password Reset Request</h2>

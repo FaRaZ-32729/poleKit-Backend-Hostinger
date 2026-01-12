@@ -91,11 +91,11 @@ const updateUserStatus = async (req, res) => {
 
             await sendEmail(
                 user.email,
-                `Account ${statusText} - PoleKit`,
+                `Account ${statusText} - SmartVolt`,
                 `
                 <div style="font-family: Arial, sans-serif; color: #333; background: #f5f8fa; padding: 20px; border-radius: 8px;">
                     <div style="text-align: center;">
-                        <img src="cid:companyLogo" alt="IOTFIY Logo" style="width: 120px; margin-bottom: 20px;" />
+                        <img src="https://polekit.iotfiysolutions.com/assets/logo.png" alt="SmartVolt Logo" style="width: 120px; margin-bottom: 20px;" />
                     </div>
                     <h2 style="color: #0055a5;">Account ${statusText}</h2>
                     ${messageBody}

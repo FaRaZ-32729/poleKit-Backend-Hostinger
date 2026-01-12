@@ -1,6 +1,6 @@
 const WebSocket = require("ws");
 
-const SERVER_URL = "ws://localhost:5050/ws/alerts";
+const SERVER_URL = "wss://polekit.iotfiysolutions.com/ws/alerts";
 
 // Dummy devices
 const DEVICES = [
