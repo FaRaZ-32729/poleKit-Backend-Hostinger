@@ -15,17 +15,10 @@ const transporter = nodemailer.createTransport({
 const sendEmail = async (to, subject, html) => {
     try {
         await transporter.sendMail({
-            from: `"PoleKit" <support@odor.iotfiysolutions.com>`,
+            from: `"SmartVolt" <support@odor.iotfiysolutions.com>`,
             to,
             subject,
             html,
-            attachments: [
-                {
-                    filename: "logo.png",
-                    path: path.join(__dirname, "../assets/logo.png"),
-                    cid: "logo" 
-                }
-            ]
         });
 
         console.log("Email sent ✔");
